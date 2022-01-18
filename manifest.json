@@ -1,0 +1,16 @@
+{
+    "name": "Brainly Unblocker",
+    "description": "Automatically unblock posts from Brainly, overcoming the 1 post a day limit!",
+    "permissions": ["cookies", "tabs", "http://*/*", "https://*/*", "storage"],
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["content.js"]
+        }
+    ]
+}
